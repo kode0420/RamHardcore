@@ -1,90 +1,79 @@
-🚀 RAM HARDCORE (PURGE v1.0)
-El script de optimización y liberación de memoria más agresivo y seguro para Windows 10/11.
-
-    "No solo liberas RAM, recuperas el control de tu PC."
+RAM HARDCORE (PURGE v1.0)
+Script avanzado de optimización y liberación agresiva de memoria para Windows 10/11.
 
 License: MITPlatform: WindowsYouTube: kode0420
-📋 Tabla de Contenidos
 
-    ¿Qué es RAM HARDCORE?
-    Resultados en Tiempo Real
-    Anatomía del Script: ¿Qué hace exactamente?
-    ¿Es seguro? (Transparencia Total)
-    Guía de Instalación y Uso
-    Video de Demostración
-    Contribuciones y Soporte
+    Propósito: Forzar la liberación de memoria caché, "Working Sets" y procesos en segundo plano no críticos para recuperar el máximo rendimiento del sistema de forma inmediata.
 
-🧠 ¿Qué es RAM HARDCORE?
+Tabla de Contenidos
 
-RAM HARDCORE (bautizado internamente como PURGE v1.0) es un script de optimización diseñado para usuarios de Windows que sufren de cuellos de botella por consumo excesivo de memoria RAM. A diferencia de los "optimizadores" milagrosos de dudosa procedencia, este script utiliza comandos nativos del sistema y técnicas de gestión de memoria a bajo nivel para forzar la liberación de cachés, "Working Sets" y procesos zombies que consumen tus recursos.
+    Descripción del Proyecto
+    Evidencia de Rendimiento
+    Anatomía Técnica del Script
+    Política de Seguridad y Transparencia
+    Guía de Instalación
+    Demostración en Video
+    Soporte y Contribuciones
 
-Ideal para:
+Descripción del Proyecto
 
-    Gamers que necesitan el máximo FPS antes de lanzar títulos pesados.
-    Creadores de contenido editando video/audio.
-    PCs antiguas que necesitan un respiro.-Usuarios con tabs de Chrome abiertos hasta en la barra de tareas.
+RAM HARDCORE (motor de purga v1.0) es una herramienta de optimización de sistema diseñada para usuarios de Windows que experimentan cuellos de botella por consumo excesivo de RAM. A diferencia de los optimizadores comerciales de dudosa procedencia, este script utiliza comandos nativos del sistema y llamadas a la API de Windows para gestionar la memoria a bajo nivel.
 
-📊 Resultados en Tiempo Real
+Casos de uso ideales:
 
-No prometemos magia, mostramos datos reales. Al ejecutar PURGE v1.0, el script genera un reporte en tiempo real. Este es un extracto de un log generado en una máquina de pruebas:
+    Preparación de entorno antes de lanzar videojuegos pesados (Maximizar FPS).
+    Sistemas operativos saturados tras sesiones prolongadas de uso.
+    Equipos de gama media/baja que requieren liberación constante de recursos.
+    Estaciones de trabajo para edición de video, audio o renderizado 3D.
+
+Evidencia de Rendimiento
+
+El script genera un reporte de estado en tiempo real. A continuación, se muestra un extracto del log generado en un entorno de prueba estándar:
 
 ========================================      PURGE v1.0 - REPORTE DE OPTIMIZACIÓN========================================Sistema Operativo: Windows 10 Pro[+] Iniciando purga de memoria...[+] Forzando liberación de Working Sets...[+] Limpiando caché de DNS y File System...[+] Finalizando procesos en segundo plano no críticos...--- ESTADÍSTICAS DE RAM ---RAM Inicial:  8429 MB en usoRAM Final:    9443 MB disponibles (Liberados)RECUPERACIÓN: 1014 MB ¡Liberados con éxito!========================================
 
-⚙️ Anatomía del Script: ¿Qué hace exactamente?
+Anatomía Técnica del Script
 
-Para que sepas exactamente qué estás ejecutando en tu PC (transparencia 100%), aquí te detallo las funciones principales del script:
-
-    Purga de Working Sets (EmptyWorkingSet):
-    El núcleo de RAM HARDCORE. Utiliza llamadas a la API de Windows para forzar a las aplicaciones en ejecución a vaciar su memoria "no esencial" (Working Set) al archivo de paginación. Esto libera GBs de RAM al instante sin cerrar tus programas.
-
-    Limpieza de Caché del Sistema (FlushSystemCaches):
-    Ordena al sistema operativo vaciar la memoria caché de archivos y la lista de páginas en espera (Standby List), devolviendo esa memoria al pool disponible.
-
-    Gestión Agresiva de Procesos (Opcional/Terminación Segura):
-    Identifica y finaliza procesos en segundo plano que consumen RAM innecesariamente (servicios de telemetría de Windows, actualizaciones en pausa, procesos zombies). Nota: Nunca toca procesos críticos del sistema (System, smss.exe, csrss.exe) para evitar pantallazos azules (BSOD).
-
-    Limpieza de File System y DNS:
-    Ejecuta ipconfig /flushdns y limpia los iconos en caché para aliviar la carga del explorador de Windows (explorer.exe), haciendo que el sistema responda más fluido.
-
-    Generador de Log (PURGE_Log.txt):
-    Crea un archivo de texto detallado (como el que ves en la introducción) con el antes y después de la memoria RAM, para que puedas comprobar la efectividad del script.
-
-🛡️ ¿Es seguro? (Transparencia Total)
-
-SÍ. Este proyecto es de código abierto bajo licencia MIT. 
-
-     No contiene malware, troyanos ni minería de criptomonedas.
-     No recopila datos personales (telemetría cero).
-     Puedes revisar el código línea por línea en este mismo repositorio. Si no confías en el ejecutable o script, ¡lee el código y compílalo tú mismo!
-
-🛠️ Guía de Instalación y Uso
-
-Sigue estos pasos para optimizar tu PC en segundos:
-
-    Ve a la carpeta principal de este repositorio.
-    Descarga el archivo RAM-HARDCORE.bat (o el .ps1 dependiendo de tu versión).
-    Haz clic derecho sobre el archivo descargado y selecciona "Ejecutar como Administrador" (Obligatorio para limpiar la memoria del sistema).
-    Observa cómo la consola hace su magia y revisa el reporte final.
-    ¡Listo! Tu PC ahora tiene memoria libre para las tareas pesadas.
-
-🎬 Video de Demostración
-
-¿Quieres ver cómo se instala y funciona en tiempo real? He preparado un video exclusivo en mi canal de YouTube explicando su desarrollo y poniéndolo a prueba en una PC saturada.
-
-👉 HAZ CLIC AQUÍ PARA VER EL VIDEO EN YOUTUBE
-(Reemplaza este enlace con el URL de tu video)
-
-¡No olvides suscribirte y dejar tu like si el script te sirvió!
-🤝 Contribuciones y Soporte
-
-Este script está en constante evolución. Si encuentras un bug, tienes ideas para liberar más RAM o quieres aportar al código:
-
-    Abre un "Issue" en este repositorio.
-    Haz un "Fork", modifica el código y envía un "Pull Request".
-
-Creador: @kode0420
-
-¡Gracias por confiar en RAM HARDCORE!
-text
- 
+Para garantizar la transparencia total, a continuación se detalla el comportamiento exacto del código al ejecutarse en su sistema:
+Función
+	
+Descripción Técnica
+Purga de Working Sets	Invoca la API de Windows para forzar a las aplicaciones en ejecución a vaciar su memoria no esencial (Working Set) al archivo de paginación, liberando RAM física sin cerrar programas.
+FlushSystemCaches	Ordena al kernel vaciar la memoria caché del sistema de archivos y la lista de páginas en espera (Standby List), devolviendo la memoria al pool disponible.
+Gestión de Procesos	Identifica y finaliza servicios en segundo plano innecesarios (telemetría, procesos zombies). Se omite la terminación de procesos críticos del sistema para prevenir BSOD (Pantallazos Azules).
+Limpieza de Red y FS	Ejecuta ipconfig /flushdns y purga la caché de iconos del explorador para restaurar la fluidez de la interfaz de Windows.
+Generador de Log	Crea un archivo de texto plano documentando las métricas de memoria antes y después de la ejecución para auditoría del usuario.
   
+Política de Seguridad y Transparencia
+
+Este proyecto es 100% Open Source bajo licencia MIT.
+
+     Cero Telemetría: El script no recopila, almacena ni transmite datos personales.
+     Código Abierto: No contiene binarios ofuscados. Puede revisar el código línea por línea en este repositorio.
+     Sin Malware: No incluye mineros de criptomonedas, troyanos ni software de terceros.
+
+Si tiene dudas de seguridad, lo invitamos a revisar el código fuente antes de su ejecución.
+Guía de Instalación
+
+Siga estos pasos para implementar el optimizador en su equipo:
+
+    Diríjase a la sección de archivos de este repositorio.
+    Descargue el archivo RAM HARDCORE.zip.
+    Extraiga el contenido del archivo .zip en una carpeta de su preferencia.
+    Haga clic derecho sobre el archivo ejecutable/script y seleccione "Ejecutar como Administrador" (Permiso obligatorio para acceder a la gestión de memoria del kernel).
+    Espere a que la consola finalice las instrucciones y revise el reporte de memoria recuperada.
+
+Demostración en Video
+
+Para comprender el funcionamiento interno del script y visualizar su impacto en tiempo real, hemos documentado una prueba de estrés en nuestro canal de YouTube. 
+
+Ver tutorial y prueba de rendimiento en YouTube
+(Reemplace este enlace con el URL de su video)
+Soporte y Contribuciones
+
+RAM HARDCORE es un proyecto en evolución constante. 
+
+     Para reportar bugs: Abra un nuevo "Issue" detallando su versión de Windows y el comportamiento presentado.
+     Para contribuir: Realice un "Fork" del repositorio, aplique sus mejoras en una rama separada y envíe un "Pull Request" para revisión.
+
+Autor: @kode0420
