@@ -60,3 +60,75 @@ RAM Inicial:  8429 MB en uso
 RAM Final:    9443 MB disponibles
 RECUPERACIÓN: 1014 MB ¡Liberados con éxito! ✅
 ========================================
+<br>
+
+⚙️ Anatomía Técnica del Script
+
+Para garantizar la transparencia total, a continuación se detalla el comportamiento exacto del código al ejecutarse en su sistema. Cero caja negra, sabes exactamente qué hace cada línea:
+⚙️ Función
+	
+💡 Descripción Técnica
+🧹 Purga de Working Sets	Invoca la API de Windows (EmptyWorkingSet) para forzar a las aplicaciones en ejecución a vaciar su memoria no esencial al archivo de paginación. Libera GBs de RAM física sin cerrar programas.
+🧊 FlushSystemCaches	Ordena al kernel vaciar la memoria caché del sistema de archivos y la lista de páginas en espera (Standby List), devolviendo la memoria al pool disponible.
+🔪 Gestión Agresiva de Procesos	Identifica y finaliza servicios en segundo plano innecesarios (telemetría, procesos zombies). Omite la terminación de procesos críticos (System, smss.exe, csrss.exe) para prevenir BSOD (Pantallazos Azules).
+🌐 Red & File System	Ejecuta ipconfig /flushdns y purga la caché de iconos del explorador (explorer.exe) para restaurar la fluidez de la interfaz de Windows.
+📝 Generador de Log	Crea un archivo de texto plano (PURGE_Log.txt) documentando las métricas de memoria antes y después de la ejecución para auditoría del usuario.
+  
+<br>
+
+🛡️ Política de Seguridad y Transparencia
+
+¡SÍ, ES 100% SEGURO Y DE CÓDIGO ABIERTO! 🟢
+
+Este proyecto está bajo licencia MIT. Puede revisar el código línea por línea en este repositorio.
+
+     ❌ Cero Malware: No contiene mineros de criptomonedas, troyanos ni software de terceros.
+     ❌ Cero Telemetría: El script no recopila, almacena ni transmite datos personales a ningún servidor.
+     ✅ Transparencia Total: Si tiene dudas de seguridad, lo invitamos a leer el código fuente antes de su ejecución. ¡Compílelo usted mismo si lo desea!
+
+<br>
+
+⬇️ Guía de Instalación y Uso
+
+Siga estos pasos simples para implementar el optimizador en su equipo y recuperar su memoria en segundos:
+
+    📥 Diríjase a la sección de archivos de este repositorio y descargue el archivo RAM HARDCORE.zip.
+    📁 Extraiga el contenido del archivo .zip en una carpeta de su preferencia.
+    🖱️ Haga Clic Derecho sobre el archivo ejecutable/script y seleccione "Ejecutar como Administrador" (Permiso obligatorio para acceder a la gestión de memoria del kernel).
+    ⏳ Espere a que la consola finalice las instrucciones y observe el reporte de memoria recuperada.
+    ✅ ¡Listo! Tu PC ahora tiene memoria libre para las tareas pesadas.
+
+<br>
+
+🎥 Video de Demostración
+
+Para comprender el funcionamiento interno del script y visualizar su impacto en tiempo real, he preparado un video exclusivo en mi canal de YouTube. Puse a prueba el script en una PC totalmente saturada para que veas los resultados.
+<div align="center">
+
+👇 ¡HAZ CLIC AQUÍ PARA VER EL VIDEO! 👇
+
+![Ver Video en YouTube](https://img.shields.io/badge/▶️ VER%20VIDEO%20EN%20YOUTUBE-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+</div>
+
+     
+
+    ¡No olvides suscribirte y dejar tu like si el script te sirvió! Tu apoyo mantiene vivo el proyecto.
+
+<br>
+
+🤝 Soporte y Contribuciones
+
+RAM HARDCORE es un proyecto en evolución constante. Su ayuda es bienvenida para mejorar la eficiencia del código.
+
+     🐛 Para reportar bugs: Abra un nuevo "Issue" detallando su versión de Windows y el comportamiento presentado.
+     🛠️ Para contribuir: Realice un "Fork" del repositorio, aplique sus mejoras en una rama separada y envíe un "Pull Request" para revisión.
+
+<br>
+
+<div align="center">
+
+⭐ Creado con dedicación por @kode0420 ⭐
+
+¡Gracias por confiar en RAM HARDCORE!
+</div>
+```
