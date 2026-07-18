@@ -39,9 +39,8 @@ Libera RAM, vacía caché del sistema, cierra procesos innecesarios y exprime ca
 
 Pensado para gamers, creadores de contenido y cualquiera que quiera exprimir hardware limitado sin comprar RAM nueva.
 
-🎥 Video de presentación: *(link aquí)*
-
----
+🎥 Video de presentación: 
+---https://youtu.be/qifc-I64QjY?si=wv_x9GGZOs_xR6Z0
 
 ## 🚀 Características
 
